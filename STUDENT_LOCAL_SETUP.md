@@ -70,7 +70,15 @@ python -c "from transformers import AutoTokenizer, AutoModelForSeq2SeqLM; AutoTo
 
 ---
 
-## Step 5: Start Jupyter Lab
+## Step 6: Make venv accessible in jupyter lab
+
+```bash
+pip install --user ipykernel
+python -m ipykernel install --user --name=venv
+```
+
+
+## Step 7: Start Jupyter Lab
 
 ```bash
 jupyter lab
